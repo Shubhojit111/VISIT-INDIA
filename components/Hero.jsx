@@ -60,7 +60,7 @@ export default function Hero() {
 
         {/* INDIA Typography — Mid-ground, behind landscape silhouette */}
         <motion.div 
-          className="absolute top-[18%] left-[15%] z-10 flex items-center justify-center pointer-events-none"
+          className="absolute top-[16%] left-[12%] z-10 flex items-center justify-center pointer-events-none"
           style={{ y: textY }}
         >
           <h1 

@@ -13,10 +13,12 @@ import CustomCursor from '@/components/CustomCursor';
 import Footer from '@/components/Footer';
 import SmoothScroll from '@/components/SmoothScroll';
 import Testimonials from '@/components/Testimonials';
+import LoadingScreen from '@/components/LoadingScreen';
 
 export default function Home() {
   return (
     <SmoothScroll>
+      <LoadingScreen />
       <CustomCursor />
       <Navigation />
       
