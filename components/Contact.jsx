@@ -9,8 +9,8 @@ export default function Contact() {
       {/* Background — Cinematic Indian postcard */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1547710272-f0cd2545f838?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Using a placeholder image for now
-          alt="Ancient temple in Jaipur at sunset"
+          src="https://images.unsplash.com/photo-1595433306946-233f47e4af3a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Tea plantations across the hills of Munnar, Kerala"
           fill
           className="object-cover"
           sizes="100vw"
@@ -96,7 +96,7 @@ export default function Contact() {
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full py-4 bg-saffron text-midnight text-sm tracking-[0.25em] font-sans font-medium rounded-sm hover:bg-saffron/80 transition-colors duration-300 mt-6"
+                className="mt-6 w-full rounded-sm bg-saffron py-4 font-sans text-sm font-medium tracking-[0.25em] text-midnight transition-all duration-300 hover:bg-saffron/80 hover:tracking-[0.3em]"
                 data-cursor-hover
               >
                 SEND THE MESSAGE
