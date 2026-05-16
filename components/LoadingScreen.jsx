@@ -7,22 +7,28 @@ export default function LoadingScreen() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Prevent scrolling when loading
-    if (loading) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
+    // Lock scroll on both html and body to override Lenis
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.height = '100%';
 
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2500); // Shorter duration (2.5s)
+      // Unlock scroll
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+      document.documentElement.style.height = '';
+      // Signal SmoothScroll to start
+      window.dispatchEvent(new CustomEvent('loadingComplete'));
+    }, 2500);
 
     return () => {
       clearTimeout(timer);
-      document.body.style.overflow = 'auto';
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+      document.documentElement.style.height = '';
     };
-  }, [loading]);
+  }, []);
 
   return (
     <AnimatePresence>

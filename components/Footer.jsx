@@ -19,7 +19,7 @@ export default function Footer() {
         <motion.div 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.05, margin: "0px 0px -50px 0px" }}
           className="flex flex-col md:flex-row items-center justify-between gap-6"
         >
           {/* Left Nav */}
@@ -71,7 +71,7 @@ export default function Footer() {
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.05, margin: "0px 0px -50px 0px" }}
           className="text-center text-ivory/30 text-xs mt-8 font-serif italic"
         >
           &copy; {new Date().getFullYear()} Visit India. All rights reserved.

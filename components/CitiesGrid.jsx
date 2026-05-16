@@ -1,7 +1,7 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import Image from 'next/image';
+import FadeIn from './FadeIn';
 
 const cities = [
   {
@@ -39,13 +39,7 @@ export default function CitiesGrid() {
     <section id="detailed-route" className="relative bg-midnight py-16 md:py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-8 md:px-16">
         {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mb-12 md:mb-16"
-        >
+        <FadeIn className="mb-12 md:mb-16">
           <div className="flex items-center gap-6 mb-8">
             <div className="h-px w-12 md:w-16 bg-ivory/40" />
             <span className="text-xs md:text-sm tracking-[0.3em] text-ivory/60 font-sans uppercase">
@@ -56,18 +50,16 @@ export default function CitiesGrid() {
           <h2 className="font-sans text-5xl md:text-7xl lg:text-8xl text-ivory tracking-wider font-light flex items-center gap-6 md:gap-8 flex-wrap uppercase">
             FOUR CITIES <span className="font-serif italic text-saffron/80 lowercase tracking-[0.05em] text-[1.1em]">one</span> JOURNEY
           </h2>
-        </motion.div>
+        </FadeIn>
 
         {/* Cities Cards Grid — 2x2 Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           {cities.map((city, index) => (
-            <motion.div
+            <FadeIn
               key={city.name}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-[#141414] rounded-3xl overflow-hidden flex flex-col group border border-white/5 hover:border-saffron/20 transition-all duration-500"
+              delay={index * 0.1}
+              duration={0.6}
+              className="bg-[#141414] rounded-3xl overflow-hidden flex flex-col group border border-white/5 hover:border-saffron/20 transition-colors duration-500"
             >
               {/* Image Area */}
               <div className="relative h-80 md:h-[400px] overflow-hidden">
@@ -101,7 +93,7 @@ export default function CitiesGrid() {
                   ))}
                 </ul>
               </div>
-            </motion.div>
+            </FadeIn>
           ))}
         </div>
       </div>

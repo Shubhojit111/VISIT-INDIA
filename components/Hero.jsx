@@ -38,12 +38,22 @@ export default function Hero() {
   const figureUp = useTransform(scrollYProgress, [0, 1], [0, -140]);
   const figureY = useTransform([figureDown, figureUp, hoverSpring], ([down, up, h]) => down + (up - down) * h);
 
+  const handleHeroMouseLeave = (event) => {
+    // Navigation overlaps the hero visually, so crossing into it should not
+    // reset the hero parallax state.
+    if (event.relatedTarget instanceof Element && event.relatedTarget.closest('nav')) {
+      return;
+    }
+
+    hover.set(0);
+  };
+
   return (
     <section ref={containerRef} className="relative h-[200vh]">
       <div
         className="sticky top-0 h-screen w-full overflow-hidden"
         onMouseEnter={() => hover.set(1)}
-        onMouseLeave={() => hover.set(0)}
+        onMouseLeave={handleHeroMouseLeave}
       >
         {/* Background Plane */}
         <motion.div className="absolute inset-0 z-0" style={{ y: bgY }}>

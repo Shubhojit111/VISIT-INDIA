@@ -23,7 +23,7 @@ export default function Contact() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.05, margin: "0px 0px -50px 0px" }}
           transition={{ duration: 0.8 }}
           className="mb-24 text-center"
         >
@@ -45,7 +45,7 @@ export default function Contact() {
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.05, margin: "0px 0px -50px 0px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="glass-panel p-8 md:p-12 rounded-lg"
           >
@@ -108,7 +108,7 @@ export default function Contact() {
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.05, margin: "0px 0px -50px 0px" }}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="flex flex-col justify-between space-y-12 lg:space-y-0"
           >
