@@ -97,7 +97,7 @@ export default function Testimonials() {
               </div>
 
               {/* Left Content */}
-              <div className="p-10 md:p-16 lg:w-[70%] flex flex-col justify-between">
+              <div className="p-10 md:p-12 lg:w-[70%] flex flex-col justify-between">
                 <div>
                   <div className="flex items-center gap-1 mb-8">
                     {[...Array(5)].map((_, i) => (

@@ -71,7 +71,7 @@ export default function Navigation() {
             <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
           </svg>
           <span className="text-xs tracking-[0.3em] text-ivory font-sans font-medium group-hover:text-saffron transition-colors duration-500">
-            VISIT INDIA
+            INDIA
           </span>
         </Link>
 
@@ -87,6 +87,12 @@ export default function Navigation() {
               {item.label}
             </a>
           ))}
+          <Link
+            href="/register"
+            className="px-7 py-3 border border-saffron rounded-full text-[10px] tracking-[0.25em] text-saffron hover:bg-saffron hover:text-midnight transition-all duration-500 font-sans font-bold"
+          >
+            JOIN
+          </Link>
           <a
             href="#contact"
             onClick={(e) => handleScrollTo(e, "#contact")}
@@ -140,11 +146,24 @@ export default function Navigation() {
                 {item.label}
               </motion.a>
             ))}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7 }}
+            >
+              <Link
+                href="/register"
+                onClick={() => setIsOpen(false)}
+                className="block px-12 py-5 border border-saffron rounded-full text-sm tracking-[0.25em] text-saffron hover:bg-saffron hover:text-midnight transition-all font-sans font-bold"
+              >
+                JOIN
+              </Link>
+            </motion.div>
             <motion.a
               href="#contact"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.7 }}
+              transition={{ delay: 0.8 }}
               onClick={(e) => handleScrollTo(e, "#contact")}
               className="mt-8 px-12 py-5 border border-saffron rounded-full text-sm tracking-[0.25em] text-saffron hover:bg-saffron hover:text-midnight transition-all font-sans font-bold"
             >

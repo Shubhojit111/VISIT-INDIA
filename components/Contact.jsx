@@ -9,7 +9,7 @@ export default function Contact() {
       {/* Background — Cinematic Indian postcard */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1920&q=80" // Using a placeholder image for now
+          src="https://images.unsplash.com/photo-1547710272-f0cd2545f838?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Using a placeholder image for now
           alt="Ancient temple in Jaipur at sunset"
           fill
           className="object-cover"
@@ -20,7 +20,7 @@ export default function Contact() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 py-16 md:py-20 min-h-screen flex flex-col justify-center">
         {/* Section Header */}
-        <motion.div
+        <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.05, margin: "0px 0px -50px 0px" }}

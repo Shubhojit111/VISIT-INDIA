@@ -15,7 +15,9 @@ const polaroids = [
 
 export default function Hero() {
   const containerRef = useRef(null);
-  const hover = useMotionValue(0);
+  // The loading screen can hide the first pointer event if the cursor is
+  // already over the fixed nav, so start in the same state as an active hero.
+  const hover = useMotionValue(1);
   const hoverSpring = useSpring(hover, { damping: 22, stiffness: 380, mass: 0.6 });
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -41,6 +43,11 @@ export default function Hero() {
   const handleHeroMouseLeave = (event) => {
     // Navigation overlaps the hero visually, so crossing into it should not
     // reset the hero parallax state.
+    // Moving into browser chrome such as the scrollbar also reports no target.
+    if (!event.relatedTarget) {
+      return;
+    }
+
     if (event.relatedTarget instanceof Element && event.relatedTarget.closest('nav')) {
       return;
     }

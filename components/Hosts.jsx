@@ -105,11 +105,11 @@ export default function Hosts() {
                   </h3>
                 </div>
                 
-                <p className="text-ivory/70 font-serif font-light leading-relaxed tracking-wide mb-10 text-[15px] md:text-base">
+                <p className="text-ivory/70 font-serif font-light leading-relaxed tracking-wide pb-10 text-[15px] md:text-base border-b border-white/5">
                   {host.description}
                 </p>
 
-                <div className="space-y-6 mt-auto border-t border-white/5 pt-8">
+                <div className="space-y-6 mt-auto pt-8">
                   <div>
                     <div className="flex items-center gap-3 mb-1">
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-ivory/40">
