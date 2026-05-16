@@ -14,11 +14,11 @@ const faqItems = [
   },
   {
     question: 'What kind of accommodation can I expect?',
-    answer: 'You\'ll stay in carefully selected 4-star hotels that reflect the local culture and provide comfort. In some locations, we also include unique experiences like a traditional ryokan stay.',
+    answer: 'You\'ll stay in carefully selected 4-star hotels that reflect the local culture and provide comfort. In some locations, we also include unique experiences like a heritage palace stay.',
   },
   {
     question: 'Are meals included?',
-    answer: 'Yes, all meals listed in the detailed itinerary are included. We curate dining experiences from Michelin-starred restaurants to authentic local eateries.',
+    answer: 'Yes, all meals listed in the detailed itinerary are included. We curate dining experiences from award-winning restaurants to authentic local eateries.',
   },
   {
     question: 'What if I need to cancel my trip?',
@@ -34,7 +34,7 @@ export default function Faq() {
   };
 
   return (
-    <section id="faq" className="relative bg-midnight py-24 md:py-32 overflow-hidden">
+    <section id="faq" className="relative bg-midnight py-16 md:py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-8 md:px-16">
         {/* Section Header */}
         <motion.div
@@ -52,7 +52,7 @@ export default function Faq() {
           </div>
           
           <h2 className="font-sans text-5xl md:text-7xl lg:text-8xl text-ivory tracking-wider font-light flex items-center gap-6 md:gap-8 flex-wrap">
-            FREQUENTLY <span className="font-serif italic text-saffron/80 lowercase tracking-normal">asked</span> QUESTIONS
+            FREQUENTLY <span className="font-serif italic text-saffron/80 lowercase tracking-[0.05em] text-[1.1em]">asked</span> QUESTIONS
           </h2>
         </motion.div>
 

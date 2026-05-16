@@ -6,9 +6,9 @@ import Image from 'next/image';
 const hostsData = [
   {
     role: 'LEAD GUIDE • KERALA',
-    name: 'YUKI TANAKA',
-    description: 'Kerala-born, fourth-generation tea ceremony family. Spent her twenties studying art history in Paris before coming home to do this. Knows every back-street tea house in Munnar.',
-    languages: 'Malayalam • English • French',
+    name: 'ANJALI SHARMA',
+    description: 'Kerala-born, fourth-generation tea-farming family. Spent her twenties studying art history in London before coming home to do this. Knows every hidden viewpoint in the Munnar hills.',
+    languages: 'Malayalam • English • Hindi',
     favoriteSpot: 'Pre-dawn tea plantations, before the gates have anyone in front of them.',
     inTheirWords: '"The trick is to slow down, even when the city asks you not to."',
     coverImage: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80',
@@ -30,7 +30,7 @@ const hostsData = [
 
 export default function Hosts() {
   return (
-    <section className="relative bg-midnight py-24 md:py-32 overflow-hidden">
+    <section id="hosts" className="relative bg-midnight py-16 md:py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-8 md:px-16">
         {/* Section Header */}
         <motion.div
@@ -122,7 +122,7 @@ export default function Hosts() {
                       </svg>
                       <span className="text-[10px] tracking-[0.2em] text-ivory/40 uppercase">Languages</span>
                     </div>
-                    <p className="text-sm text-ivory/80 font-serif italic pl-6">{host.languages}</p>
+                    <p className="text-base text-ivory/80 font-serif italic pl-6 tracking-wide">{host.languages}</p>
                   </div>
                   
                   <div>
@@ -133,7 +133,7 @@ export default function Hosts() {
                       </svg>
                       <span className="text-[10px] tracking-[0.2em] text-ivory/40 uppercase">Favorite Spot</span>
                     </div>
-                    <p className="text-sm text-ivory/80 font-serif italic pl-6">{host.favoriteSpot}</p>
+                    <p className="text-base text-ivory/80 font-serif italic pl-6 tracking-wide">{host.favoriteSpot}</p>
                   </div>
 
                   <div>
@@ -147,7 +147,7 @@ export default function Hosts() {
                       </svg>
                       <span className="text-[10px] tracking-[0.2em] text-ivory/40 uppercase">In Their Words</span>
                     </div>
-                    <p className="text-sm text-ivory/80 font-serif italic pl-6">{host.inTheirWords}</p>
+                    <p className="text-base text-ivory/80 font-serif italic pl-6 tracking-wide">{host.inTheirWords}</p>
                   </div>
                 </div>
               </div>

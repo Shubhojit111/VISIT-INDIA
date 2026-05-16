@@ -9,7 +9,7 @@ export default function CustomCursor() {
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
 
-  const springConfig = { damping: 25, stiffness: 700 };
+  const springConfig = { damping: 35, stiffness: 1000, mass: 0.5 };
   const cursorXSpring = useSpring(cursorX, springConfig);
   const cursorYSpring = useSpring(cursorY, springConfig);
 
@@ -38,7 +38,9 @@ export default function CustomCursor() {
     document.addEventListener('mouseover', handleMouseOver);
     document.addEventListener('mouseout', handleMouseOut);
     document.addEventListener('mouseleave', handleMouseLeave);
-    document.body.classList.add('cursor-none');
+    if (window.matchMedia('(pointer: fine)').matches) {
+      document.body.classList.add('cursor-none');
+    }
 
     return () => {
       window.removeEventListener('mousemove', moveCursor);

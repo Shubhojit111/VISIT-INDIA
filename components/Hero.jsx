@@ -66,20 +66,20 @@ export default function Hero() {
           <h1 
             className="font-serif text-[18vw] md:text-[18vw] leading-none tracking-[0.05em] font-light select-none transform scale-y-[1.2]"
             style={{ 
-              WebkitTextStroke: '1px rgba(245, 232, 211, 0.7)',
+              WebkitTextStroke: '2px rgba(245, 232, 211, 0.8)',
               color: 'transparent',
-              textShadow: '0 0 100px rgba(217, 164, 65, 0.08)',
-              maskImage: 'linear-gradient(to bottom, black 65%, transparent 80%)',
-              WebkitMaskImage: 'linear-gradient(to bottom, black 65%, transparent 80%)',
+              textShadow: '0 0 120px rgba(217, 164, 65, 0.1)',
+              maskImage: 'linear-gradient(to bottom, black 65%, transparent 85%)',
+              WebkitMaskImage: 'linear-gradient(to bottom, black 65%, transparent 85%)',
             }}
           >
             INDIA
           </h1>
         </motion.div>
 
-        {/* Landscape Silhouette Overlay — crops bottom of typography */}
-        <div className="absolute bottom-0 left-0 right-0 h-[40%] z-20 pointer-events-none">
-          <div className="absolute inset-0 bg-gradient-to-t from-midnight via-midnight/80 to-transparent" />
+        {/* Landscape Silhouette Overlay — crops bottom of typography and lady */}
+        <div className="absolute bottom-0 left-0 right-0 h-[35%] z-[35] pointer-events-none">
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent" />
         </div>
 
         {/* Saree Figure — Foreground right */}

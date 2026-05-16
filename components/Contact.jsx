@@ -10,7 +10,7 @@ export default function Contact() {
       <div className="absolute inset-0 z-0">
         <Image
           src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1920&q=80" // Using a placeholder image for now
-          alt="Japanese temple with cherry blossoms"
+          alt="Ancient temple in Jaipur at sunset"
           fill
           className="object-cover"
           sizes="100vw"
@@ -18,7 +18,7 @@ export default function Contact() {
         <div className="absolute inset-0 bg-midnight/60 backdrop-blur-[2px]" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 py-24 md:py-32 min-h-screen flex flex-col justify-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 py-16 md:py-20 min-h-screen flex flex-col justify-center">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -124,7 +124,7 @@ export default function Contact() {
                   </svg>
                   <div>
                     <span className="text-xs tracking-[0.15em] text-ivory/50 font-sans uppercase block">Email Us</span>
-                    <a href="mailto:hello@japantours.travel" className="text-ivory font-serif italic hover:text-saffron transition-colors duration-300">hello@japantours.travel</a>
+                    <a href="mailto:hello@visitindia.travel" className="text-lg text-ivory font-serif italic tracking-wide hover:text-saffron transition-colors duration-300">hello@visitindia.travel</a>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -133,7 +133,7 @@ export default function Contact() {
                   </svg>
                   <div>
                     <span className="text-xs tracking-[0.15em] text-ivory/50 font-sans uppercase block">Call or Whatsapp</span>
-                    <a href="tel:+818012345678" className="text-ivory font-serif italic hover:text-saffron transition-colors duration-300">+81 80 1234 5678</a>
+                    <a href="tel:+919876543210" className="text-lg text-ivory font-serif italic tracking-wide hover:text-saffron transition-colors duration-300">+91 98765 43210</a>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -143,7 +143,7 @@ export default function Contact() {
                   </svg>
                   <div>
                     <span className="text-xs tracking-[0.15em] text-ivory/50 font-sans uppercase block">Office</span>
-                    <p className="text-ivory font-serif italic">Shibuya, Tokyo • Pontochō, Kyoto</p>
+                    <p className="text-lg text-ivory font-serif italic tracking-wide leading-relaxed">Connaught Place, Delhi • Fort Kochi, Kerala</p>
                   </div>
                 </div>
               </div>

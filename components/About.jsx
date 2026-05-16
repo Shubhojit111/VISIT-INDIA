@@ -55,7 +55,7 @@ function AnimatedText({ text, className, delay = 0 }) {
 
 export default function About() {
   return (
-    <section id="about" className="relative bg-midnight py-24 md:py-32 overflow-hidden">
+    <section id="about" className="relative bg-midnight py-16 md:py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-8 md:px-16">
         {/* Section Number & Heading */}
         <motion.div
@@ -109,8 +109,8 @@ export default function About() {
                 </div>
               </div>
               <div>
-                <h4 className="text-sm tracking-[0.2em] text-ivory font-sans uppercase mb-1">Sameer & Yuki</h4>
-                <p className="text-sm text-ivory/50 font-serif italic">your hosts on the ground</p>
+                <h4 className="text-sm tracking-[0.2em] text-ivory font-sans uppercase mb-1">Sameer & Anjali</h4>
+                <p className="text-base text-ivory/50 font-serif italic tracking-wide">your hosts on the ground</p>
               </div>
             </motion.div>
           </div>
