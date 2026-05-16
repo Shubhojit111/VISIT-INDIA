@@ -31,13 +31,13 @@ const places = [
   {
     title: 'Ladakh Peaks',
     location: 'Ladakh, Himalayas',
-    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=80',
     gridClass: 'md:col-span-2 md:row-span-1', // Wide landscape
   },
   {
     title: 'Golden Temple',
     location: 'Amritsar, Punjab',
-    image: 'https://images.unsplash.com/photo-1610482298512-6c1183f428c6?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&w=1200&q=80',
     gridClass: 'md:col-span-1 md:row-span-1', // Small square
   },
   {

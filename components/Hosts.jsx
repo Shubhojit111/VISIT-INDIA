@@ -43,7 +43,7 @@ export default function Hosts() {
           <div className="flex items-center gap-6 mb-8">
             <div className="h-px w-12 md:w-16 bg-ivory/40" />
             <span className="text-xs md:text-sm tracking-[0.3em] text-ivory/60 font-sans uppercase">
-              05 — YOUR HOSTS
+              06 — YOUR HOSTS
             </span>
           </div>
           

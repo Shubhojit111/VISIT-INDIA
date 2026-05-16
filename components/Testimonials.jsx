@@ -60,12 +60,12 @@ export default function Testimonials() {
           <div className="flex items-center gap-6 mb-8">
             <div className="h-px w-12 md:w-16 bg-ivory/40" />
             <span className="text-xs md:text-sm tracking-[0.3em] text-ivory/60 font-sans uppercase">
-              07 — IN THEIR WORDS
+              05 — IN THEIR WORDS
             </span>
           </div>
           
           <h2 className="font-sans text-5xl md:text-7xl lg:text-8xl text-ivory tracking-wider font-light flex items-center gap-6 md:gap-8 flex-wrap uppercase">
-            WHAT PAST <span className="font-serif italic text-saffron/80 lowercase tracking-normal">travelers</span> SAY
+            WHAT PAST <span className="font-serif italic text-saffron/80 lowercase tracking-normal text-[1.1em]">travelers</span> SAY
           </h2>
           
           <div className="flex items-center gap-2 mt-8">
