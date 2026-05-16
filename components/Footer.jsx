@@ -50,7 +50,7 @@ export default function Footer() {
               <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
             </svg>
             <span className="text-xs tracking-[0.3em] text-ivory/50 font-sans">
-              JAPAN TOURS
+              VISIT INDIA
             </span>
           </div>
 
@@ -74,7 +74,7 @@ export default function Footer() {
           viewport={{ once: true }}
           className="text-center text-ivory/30 text-xs mt-8 font-serif italic"
         >
-          &copy; 2024 Japan Tours. All rights reserved.
+          &copy; {new Date().getFullYear()} Visit India. All rights reserved.
         </motion.p>
       </div>
     </footer>
