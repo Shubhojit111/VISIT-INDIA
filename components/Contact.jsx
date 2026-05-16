@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative min-h-screen overflow-hidden">
+    <section id="contact" className="relative overflow-hidden">
       {/* Background — Cinematic Indian postcard */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -18,14 +18,14 @@ export default function Contact() {
         <div className="absolute inset-0 bg-midnight/60 backdrop-blur-[2px]" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 py-16 md:py-20 min-h-screen flex flex-col justify-center">
+      <div className="relative z-10 mx-auto flex max-w-7xl flex-col justify-center px-8 py-14 md:px-16 md:py-16 lg:min-h-[82vh]">
         {/* Section Header */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.05, margin: "0px 0px -50px 0px" }}
           transition={{ duration: 0.8 }}
-          className="mb-24 text-center"
+          className="mb-14 text-center md:mb-16"
         >
           <div className="flex items-center justify-center gap-6 mb-8">
             <div className="h-px w-12 md:w-16 bg-ivory/40" />
@@ -40,7 +40,7 @@ export default function Contact() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20">
           {/* Left Column - Form */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
